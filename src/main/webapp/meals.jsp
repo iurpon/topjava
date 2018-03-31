@@ -36,13 +36,15 @@
                 <td><c:out value="${meal.calories}" /></td>
                 <td><c:out value="${meal.exceed}" /></td>
 
-                    <%--<td><a href="UserController?action=edit&userId=<c:out value="${user.userid}"/>">Update</a></td>--%>
-                    <%--<td><a href="UserController?action=delete&userId=<c:out value="${user.userid}"/>">Delete</a></td>--%>
+                    <td><a href="meals?action=edit&id=<c:out value="${meal.id}"/>">Update</a></td>
+                    <td><a href="meals?action=delete&id=<c:out value="${meal.id}"/>">Delete</a></td>
             </tr>
 
     </c:forEach>
-    </tbody>
-</table>
 
+    </tbody>
+
+</table>
+    <td><a href="meals?action=add&id=-1">ADD NEW</a></td>
 </body>
 </html>
